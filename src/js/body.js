@@ -4,14 +4,17 @@ const description = document.querySelector(".description");
 const content = document.querySelector(".content");
 //const about = document.querySelector(".about");
 //const navbar = document.querySelector(".navbar");
+if (content && description) {
+    var header_height = content.offsetHeight;
+    // var content_height = description.offsetHeight;
+    const scroll = window.pageYOffset;
+    window.onload = () => {
+        window.addEventListener('scroll', () => {
+            console.log(scroll);
+            title.style.top = `${50 - scroll}%`
+            title.style.opacity = `${-scroll / (header_height / 0.9)+0.9}`;
+            description.style.opacity = `${scroll / 790 }`;
 
-let header_height = content.offsetHeight;
-let content_height = -description.offsetHeight;
-
-window.addEventListener('scroll', () => {
-    let scroll = window.pageYOffset;
-
-    title.style.opacity = -scroll / (header_height / 0.9) + 1;
-    description.style.opacity = -scroll / (content_height / 1) - 0.8;
-
-})
+        })
+    }
+}
