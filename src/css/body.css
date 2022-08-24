@@ -34,6 +34,13 @@
     position: relative;
 }
 
+.effect-1::after {
+    content: "";
+    /* background: #8844fd;
+    opacity: 0.5;
+    z-index: 3; */
+}
+
 .shadow_1 {
     background: linear-gradient(to top, #0a1931, transparent);
     bottom: 0;
