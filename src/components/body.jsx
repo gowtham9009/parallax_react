@@ -31,7 +31,7 @@ const Body = () => {
             <div className='content'>
               <div className='effect-1'></div>
               <h1 className='title'> 
-                <span className='big-title'> COSMOS. </span>
+                <span className='big-title'> COSMO. </span>
               </h1>    
               <div className='shadow_1'></div>  
               <div className='effect-2' id="effect-2"></div>
